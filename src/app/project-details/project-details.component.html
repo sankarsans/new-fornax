@@ -1,0 +1,72 @@
+<div class="details section-padding my-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="header pb-3">{{ activeItem.name }}</h1>
+        <img src="{{ activeItem.bannerimage }}" class="w-100" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="card border-0 p-4">
+      <h1 class="sub-title pb-4 text-center">Floor Plan</h1>
+      <img src="{{ activeItem.chart }}" class="w-75 mx-auto pb-3" alt="" />
+    </div>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="card border-0 p-5">
+      <h1 class="sub-title pb-4 text-center">Home configuration</h1>
+      <ul class="list-unstyled">
+        <li>
+          Plot area (sqft)<span>{{ activeItem.plotArea }}</span>
+        </li>
+        <li>
+          Builtup area (sqft)<span>{{ activeItem.buildArea }}</span>
+        </li>
+        <li>
+          No. of floors<span>{{ activeItem.floors }}</span>
+        </li>
+        <li>
+          Entry<span>{{ activeItem.entry }}</span>
+        </li>
+        <li>
+          Bedrooms<span>{{ activeItem.bedrooms }}</span>
+        </li>
+        <li>
+          Attached bathrooms<span>{{ activeItem.attachedBathrooms }}</span>
+        </li>
+        <li>
+          Common bathroom<span>{{ activeItem.commonBathrooms }}</span>
+        </li>
+        <li>
+          Living room<span>{{ activeItem.livingRoom }}</span>
+        </li>
+        <li>
+          Family room<span>{{ activeItem.familyRoom }}</span>
+        </li>
+        <li>
+          Kitchen<span>{{ activeItem.kitchen }}</span>
+        </li>
+        <li>
+          Dinning room<span>{{ activeItem.diningRoom }}</span>
+        </li>
+        <li>
+          Porch<span>{{ activeItem.porch }}</span>
+        </li>
+        <li>
+          Verandah<span>{{ activeItem.verandah }}</span>
+        </li>
+        <li>
+          Terrace<span>{{ activeItem.terraces }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<hr />

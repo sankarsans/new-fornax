@@ -1,0 +1,25 @@
+.navbar{
+    background-color: #1d2c40;
+    padding: 0;
+    -webkit-box-shadow: 0px 1px 12px 0px rgba(56,54,56,0.8);
+-moz-box-shadow: 0px 1px 12px 0px rgba(56,54,56,0.8);
+box-shadow: 0px 1px 12px 0px rgba(56,54,56,0.8);
+    li{
+        a{
+            color: #2c2c2c;
+            font-weight: 600;
+            font-size: 0.938rem;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all 0.4s;
+            position: relative;
+            padding: 15px 10px;
+            z-index: 1;   
+            transition: 0.5s;
+            &:hover {
+                color: #e49a1b;
+                transition: 0.5s;
+            }
+        }
+    }
+}

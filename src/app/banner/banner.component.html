@@ -1,0 +1,31 @@
+
+<div>
+  <owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let img of Images">
+      <ng-template class="slide" carouselSlide>
+        <div style="align-content: center">  
+          <img style="height: 90vh;width:100%" src={{img}}/>  
+        </div>  
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>  
+  
+      <div class="banner-content">
+        <h1 class="title">DESIGN... BUILED... LIVE..,
+          <div class="aurora">
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+          </div>
+        </h1>
+        <h2>in Fornax home developers</h2>
+
+        <h4>"We're in it for the greater good"</h4>
+
+        <p>Our goal is to design places that make a positive difference in the world.<br>
+          That’s why people are at the heart of
+          everything we do.</p>
+      </div>
+  </div>
+  

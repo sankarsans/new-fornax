@@ -1,0 +1,21 @@
+export interface ProjectInfo {
+    name: string,
+    id: string,
+    code: string,
+    bannerimage: string,
+    chart: string,
+    plotArea: string,
+    buildArea: string,
+    floors: string,
+    entry: string,
+    bedrooms: string,
+    attachedBathrooms: string,
+    commonBathrooms: string,
+    livingRoom: string,
+    familyRoom: string,
+    kitchen: string,
+    diningRoom: string,
+    porch: string,
+    verandah: string,
+    terraces: string
+}
