@@ -1,43 +1,51 @@
-<div class="project-wrapper section-padding bg-light" *ngIf="!projectPage;else other_content">
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-center pb-4 mt-4">
-            <h1 class="header">Inspiration book
-            </h1>
-            <a href="">View catalogue
-                <img src="assets/images/arrow.svg" alt="arrow">
-            </a>
-        </div>
-        <owl-carousel-o [options]="customOptions">
-            <ng-container *ngFor="let project of projectInfo">
-              <ng-template class="slide" carouselSlide>
-                <a class="text-dark" [routerLink]="['project-details', project.id]">
-                    <div class="mr-5 bg-light-grey pb-1 mb-4">  
-                        <img class="w-100" src={{project.bannerimage}}/>  
-                        <h3 class=" my-3 pl-3">{{project.name}}</h3>
-                    </div>  
-                </a>
-              </ng-template>
-            </ng-container>
-          </owl-carousel-o>  
+<div
+  class="project-wrapper section-padding bg-light"
+  *ngIf="!projectPage; else other_content"
+>
+  <div class="container">
+    <div class="d-flex justify-content-center align-items-center pb-4 mt-4">
+      <h1 class="header">Inspiration book</h1>
     </div>
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let project of projectInfo">
+        <ng-template class="slide" carouselSlide>
+          <a class="text-dark" [routerLink]="['project-details', project.id]">
+            <div class="mr-5 bg-light-grey pb-1 mb-4">
+              <img class="w-100" src="{{ project.bannerimage }}" />
+              <h3 class="my-3 pl-3">{{ project.name }}</h3>
+            </div>
+          </a>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+    <div class="col-12 text-center">
+      <a routerLink="/projects" class="orange-link text-decoration-underline"
+        >View All the Projects
+        <img src="assets/images/arrow.svg" alt="arrow" />
+      </a>
+    </div>
+  </div>
 </div>
 
 <ng-template #other_content>
-    <div class="project section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 pt-5 text-center pb-4">
-                    <h1 class="header">Homes that inspire you!</h1>
-                    <p>Browse our design library</p>
-                </div>
-                <div class="col-md-6 col-12 pb-4" *ngFor="let project of projectInfo">
-                    <a class=""  [routerLink]="['/project-details', project.id]">
-                        <img class="w-100" src={{project.bannerimage}} />
-                        <h3 class="text-dark my-3 pl-3">{{project.name}}</h3>
-                    </a>
-                </div>
-            </div>
+  <div class="project section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pt-5 text-center pb-4">
+          <h1 class="header">Homes that inspire you!</h1>
+          <p>Browse our design library</p>
         </div>
+        <div class="col-md-6 col-12 pb-5" *ngFor="let project of projectInfo">
+          <a
+            class="d-inline-block bg-white"
+            [routerLink]="['/project-details', project.id]"
+          >
+            <img class="w-100" src="{{ project.bannerimage }}" />
+            <h3 class="text-dark my-3 pl-3">{{ project.name }}</h3>
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
+  <hr />
 </ng-template>
-

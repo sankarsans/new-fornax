@@ -1,42 +1,44 @@
-.feature-wrapper{
-    .card{
-        img{
-            border-radius: 4px 4px 0 0;
-            transition: 0.5s;
-        }
-        p{
-            font-weight: 400;
-            padding-top: 10px;
-        }
-        picture{
-            overflow: hidden;
-        }
-        h3{
-            margin: 15px 0;
-            position: relative;
-            width: fit-content;
-            &::after{
-                content: "";
-                position: absolute;
-                height: 4px;
-                width: 60%;
-                background-color: #ffbe1d;
-                left: 0;
-                bottom: -7px;
-                transition: 0.5s;
-            }
-        }
-        &:hover{
-            img{
-                transform: scale(1.1);
-                transition: 0.5s;
-            }
-            h3{
-                &::after{
-                    width: 100%;
-                    transition: 0.5s;
-                }
-            }
-        }
+@import "../../shared/variables.scss";
+
+.feature-wrapper {
+  .card {
+    img {
+      border-radius: 4px 4px 0 0;
+      transition: 0.5s;
     }
+    p {
+      font-weight: 400;
+      padding-top: 10px;
+    }
+    picture {
+      overflow: hidden;
+    }
+    h3 {
+      margin: 15px 0;
+      position: relative;
+      width: fit-content;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 60%;
+        background-color: $orange;
+        left: 0;
+        bottom: -7px;
+        transition: 0.5s;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+        transition: 0.5s;
+      }
+      h3 {
+        &::after {
+          width: 100%;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
 }

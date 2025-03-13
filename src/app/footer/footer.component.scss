@@ -1,14 +1,16 @@
+@import "../../shared/variables.scss";
+
 footer {
   // background-color: #1d2c40;
   .insta-page {
     a {
       text-decoration: underline;
-      color: #e49a1b;
+      color: $orange;
     }
   }
   .map {
     text-decoration: underline;
-    color: #e49a1b;
+    color: $orange;
   }
   a {
     transition: 0.5s;
@@ -17,10 +19,10 @@ footer {
       transition: 0.5s;
     }
     &:hover {
-      color: #e49a1b;
+      color: $orange;
       transition: 0.5s;
       svg {
-        fill: #e49a1b;
+        fill: $orange;
         transform: scale(1.1);
         transition: 0.5s;
       }

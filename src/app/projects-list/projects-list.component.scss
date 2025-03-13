@@ -1,3 +1,5 @@
-h3{
-    border-left: 3px solid #e49a1b;
+@import "../../shared/variables.scss";
+
+h3 {
+  border-left: 3px solid $orange;
 }
